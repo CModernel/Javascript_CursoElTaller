@@ -1,0 +1,39 @@
+body{
+    background: rgb(16, 46, 2);
+}
+.reloj{
+    top: 50%;
+    left: 50%;
+    color: rgb(235, 234, 234);
+    font-size: 80px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 0px 5px 0px 5px;
+    text-align: center;
+}
+
+.tabla {
+    color: rgb(235, 234, 234);
+    margin-left: 35%;
+    width: 30%;
+    text-align: center;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid rgb(235, 234, 234);
+}
+
+th {
+
+    padding: 0;
+    margin: 0;
+    border: 1px solid rgb(228, 228, 228);
+
+}
+
+td {
+
+    padding: 0;
+    margin: 0;
+    border-left: 1px solid rgb(235, 235, 235);
+    border-right: 1px solid rgb(230, 228, 228);
+}
