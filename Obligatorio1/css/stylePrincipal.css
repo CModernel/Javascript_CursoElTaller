@@ -1,0 +1,243 @@
+/* Pertenece a Entrega 1
+*/
+
+*{
+    padding: 0px;
+    margin: 0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/*
+.dFooter{
+    background-color: rgb(134, 130, 130);
+
+}*/
+
+
+.dfPadre{
+    display: flex; /* da libertad a los componentes internos*/
+    align-items: center; /* centr el contenido de todo los tags internos*/
+      
+    background-color: rgb(134, 130, 130);
+}
+
+
+
+.imagen{
+    display: inline;
+    border-radius: 50%;
+    margin-right: 25%;
+    margin-left: 25%;
+    padding: 3px;
+    height: 80px;
+
+}
+.dfLoren{
+    color: white;
+    margin-left: 50%;  
+    display: inline-block ;
+    border-left: 2px white solid;
+    padding: 1%;
+   
+    margin: 5px; 
+}
+.dfCopy{
+    text-align: center;
+    background-color: rgb(194, 190, 190);
+}
+
+header{
+    display:flex;
+    justify-content: space-between;
+    background-color: rgb(52, 30, 179);
+    color: white;
+}
+
+.navUser{
+    display:flex;
+    width: 30%;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.usuario{
+    width: 100%;
+}
+
+nav{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: white 1px solid;
+}
+
+#logo-nav{
+    border-radius: 50%;
+    background-color: white;
+    max-width:50%;
+    height: 80px;
+    align-items: center;
+    display:block;
+}
+
+#menu-nav{
+    
+    list-style: none;
+    align-items: center;
+    display: flex;
+    
+}
+
+li > a{
+    color: white;
+    font-size: large;
+    text-decoration: none;
+    padding: 10px;
+    margin: 30px;   
+}
+
+li > a:hover{
+    background-color: rgb(170, 169, 169);
+    transition: 0.3s;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 100px;
+    color: white;
+    /*font-size: 2.4rem;*/
+}
+
+/* estilos de los articulos */
+
+main{
+    background-color: rgb(52, 30, 179);
+    display: flex;
+    width: 100%;
+}
+
+#image{
+    background-image: url("../img/circuit.jpg");
+    width: 100%;
+    height: 150px;
+    display: block;
+    background-size: cover;
+    background-position-y: center;
+    background-repeat: no-repeat;
+}
+
+section{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+article{
+    padding: 3%;
+    width: 90%;
+    margin: 10px;
+    min-width: 200px;
+    display: flex;
+}
+
+.descripcion{
+    background-color: gray;
+    color:white;
+    border-radius: 20px;
+}
+
+#carouselExampleIndicators{
+    margin: 10px;
+}
+
+article > img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* estilo del aside */
+#aside-all {
+    margin-right: 0%;
+    border-radius: 5%;
+    border: 1px black solid;
+    display: flex;
+    width: 30%; 
+}
+
+.aSec{
+    flex-direction: column;
+    width: auto;
+    display: flex;
+   
+}
+
+.hAside{
+    /*display: block;*/
+    font-style: italic;
+    font-size: 2.4rem;
+    text-align: center;
+
+}
+.aSec > a{
+    font-size: 1.5rem;
+    text-align: center;
+    color: orangered;
+}
+.AImagen{
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+}
+
+
+
+@media (max-width: 500px) {
+
+    nav{
+        background-color: rgb(134, 130, 130);
+        padding: 20px;
+        position: sticky;
+        top:0; 
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    
+    #menu-nav{
+        list-style: none;
+        align-items: center;
+        padding-left: 0px;
+        display: block;
+        align-self: flex-start;
+    }
+    
+    #logo-nav{
+        border-radius: 50%;
+        height: 80px;
+        margin: auto;
+    }
+
+    #aside-all{
+        display: none; /* apuntes del profesor*/
+    }
+
+    section{
+        width: 100%;
+    }
+
+    .dfPadre{
+        flex-direction: column;
+
+    }
+
+    .dfLoren{
+        border: none;
+        text-align: center;
+    }
+}

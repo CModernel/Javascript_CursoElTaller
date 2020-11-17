@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="descripcion" content="Venta de Insumo Informatico">
+    <meta name="keywords" content="Informatica, Gaming, Computadora, PC">
+    <meta name="author" content="Christian Modernel">
+
+    <title>Bienvenido</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styleIndex.css">
+</head>
+<body>
+  <script src="js/script.js"></script>
+    <section>
+        <article class="back-login">
+        <form class="login" >
+            <div class="login-icon">
+                <img src="./img/icon_login.svg" alt="login">
+            </div>
+            <h2>Ingrese al sistema</h2>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Correo Electronico</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"  placeholder="ejemplo@dominio.com">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Contraseña</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Ingrese contraseña">
+            </div>
+            <hr>
+            <button onclick="return login();" class="btn btn-primary" >Ingresar</button>
+          </form>
+        </article>
+        <article class="back-register">
+          <form class="register" >
+            <h2>Registrarse</h2>
+            <div class="form-group">
+                <label for="formGroupExampleInput2">Cedula (del estudiante)</label>
+                <input type="text" class="form-control" id="cedulaInput" placeholder="Cedula (sin puntos ni guiones)">
+              </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput">Nombre</label>
+                <input type="text" class="form-control" id="nombreInput" placeholder="John">
+              </div>
+              <div class="form-group">
+                <label for="formGroupExampleInput"> Apellido</label>
+                <input type="text" class="form-control" id="ApellidoInput" placeholder="Doe">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Correo Electronico</label>
+                <input type="email" class="form-control" id="CorreoInput" aria-describedby="emailHelp"  placeholder="ejemplo@dominio.com">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Contraseña</label>
+                <input type="password" class="form-control" id="Password1Input" placeholder="Ingrese contraseña">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Repita Contraseña</label>
+                <input type="password" class="form-control" id="Password2Input" placeholder="Repita contraseña">
+            </div>
+            <div class="form-group">
+                <label for="inputState">Lugar de Nacimiento</label>
+                <select id="lugarNacInput" class="form-control">
+                  <option value="" selected></option>
+                  <option value="Montevideo">Montevideo</option>
+                  <option value="Artigas">Artigas</option>
+                  <option value="Canelones">Canelones</option>
+                  <option value="Cerro Largo">Cerro Largo</option>
+                  <option value="Colonia">Colonia</option>
+                  <option value="Durazno">Durazno</option>
+                  <option value="Flores">Flores</option>
+                  <option value="Lavalleja">Lavalleja</option>
+                  <option value="Maldonado">Maldonado</option>
+                  <option value="Paysandú">Paysandú</option>
+                  <option value="Río Negro">Río Negro</option>
+                  <option value="Rivera">Rivera</option>
+                  <option value="Rocha">Rocha</option>
+                  <option value="Salto">Salto</option>
+                  <option value="San José">San José</option>
+                  <option value="Soriano">Soriano</option>
+                  <option value="Tacuarembó">Tacuarembó</option>
+                  <option value="Treinta y Tres">Treinta y Tres</option>
+                </select>
+              </div>
+              <hr>
+            <button onclick="return registrar();" class="btn btn-primary">Registrarse</button>
+          </form>
+        </article>
+    </section>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
