@@ -57,21 +57,6 @@ class Login extends Component {
             </Form>
             );
     }
-
-    /*render(){
-        return (
-        <div>
-            <form action="">
-                <input type="text" placeholder="Ingrese el nombre" onChange={this.handleNombre}/>
-                <input type="text" placeholder="Ingrese su contraseña" onChange={this.handleContra}/>
-                <input type="submit"/>
-            </form>
-            <p>El nombre es: {this.state.nombreUser}</p>
-            <p>La contraseña es: {this.state.contraUser}</p>
-
-        </div>
-        );
-    }*/
 }
 
 export default Login;
