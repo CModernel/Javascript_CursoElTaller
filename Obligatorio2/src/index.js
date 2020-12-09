@@ -7,8 +7,10 @@ import Test from './Components/Test';
 import Home from './Components/Inicio/Home';
 import firebaseConfig from './firebase-config';
 import {FirebaseAppProvider} from 'reactfire';
+import Tarjeta from './Components/Tarjeta';
 
 ReactDOM.render(
+  
   <FirebaseAppProvider firebaseConfig={firebaseConfig}>
       <Suspense fallback={"Conectando con el servidor"}>
         <App />

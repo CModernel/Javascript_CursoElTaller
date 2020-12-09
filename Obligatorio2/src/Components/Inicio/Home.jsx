@@ -27,7 +27,9 @@ class Home extends Component{
             <div>
                 {this.state.listaTarjeta.map((item,keyV)=> 
                 {
-                    return(<Tarjeta Titulo={item.nombre} TipoC={item.Tipo} URL={item.URL} />)
+                    return(
+                        
+                    <Tarjeta key={keyV} Titulo={item.nombre} TipoC={item.Tipo} URL={item.URL} />)
                 })}
 
             </div>
