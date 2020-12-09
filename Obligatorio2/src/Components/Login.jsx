@@ -4,7 +4,7 @@ import { useFirebaseApp, useUser } from 'reactfire';
 
 class Login extends Component {
     
-/*
+
     constructor(props)
     {
         super(props);
@@ -32,7 +32,7 @@ class Login extends Component {
             contraUser:event.target.value
         });
     }
-*/
+
     render(){
         return(
             <Form className="mt-4 mx-auto">
