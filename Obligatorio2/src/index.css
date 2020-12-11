@@ -11,3 +11,82 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+*{
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+}
+
+section {
+  display: flex;
+  background-image: url('/src/img/background-index.jpg');
+  background-size: cover;
+}
+
+article {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  padding: 40px 0px;
+}
+
+.back-login{
+  background-color: rgba(165, 20, 248, 0.5);
+}
+
+.back-register{
+  background-color: rgba(6, 201, 81, .5);
+}
+
+form {
+  width: 40%;
+  min-width: 400px;
+  border-radius: 5%;
+  padding: 25px;
+
+}
+
+form label {
+  color: white;
+}
+
+hr{
+  border-color: white;
+}
+
+h2{
+  text-align: center;
+  color: white;
+}
+
+.btn-primary{
+  width: 100%;
+}
+
+.login {
+  background-color:  rgb(6, 201, 81);
+}
+
+.login-icon{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.login-icon img{
+  width: 40%;
+}
+
+.register{
+  background-color:rgb(165, 20, 248);
+}
+
+@media (max-width: 850px) {
+  section {
+      flex-direction: column;
+  }
+}
+

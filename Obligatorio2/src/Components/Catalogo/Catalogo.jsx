@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import Tarjeta from '../Tarjeta';
+import Tarjeta from '../Cards/Tarjeta';
 
 class Home extends Component{
 
@@ -21,15 +21,17 @@ class Home extends Component{
     }
 
     render(){
-
+        const divStyle = {
+            marginTop: '56px',
+        };
 
         return (
-            <div>
+            <div style={divStyle}>
                 {this.state.listaTarjeta.map((item,keyV)=> 
                 {
                     return(
-                        
-                    <Tarjeta key={keyV} Titulo={item.nombre} TipoC={item.Tipo} URL={item.URL} />)
+                        <Tarjeta key={keyV} Titulo={item.nombre} TipoC={item.Tipo} URL={item.URL} />
+                        )
                 })}
 
             </div>

@@ -4,8 +4,12 @@ import { Button, Col, Form } from 'react-bootstrap';
 
 class Contacto extends Component {
     render(props){
+        const divStyle = {
+            marginTop: '56px',
+        };
+    
         return(
-            <div>
+            <div style={divStyle}>
                 <h1>
                     Contacto
                 </h1>

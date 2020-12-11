@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { useFirebaseApp, useUser } from 'reactfire';
 
-class Login extends Component {
+class Login2 extends Component {
     
 
     constructor(props)
@@ -57,6 +57,8 @@ class Login extends Component {
             </Form>
             );
     }
+
+   
 }
 
-export default Login;
+export default Login2;

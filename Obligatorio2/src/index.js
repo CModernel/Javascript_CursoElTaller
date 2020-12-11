@@ -3,11 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Test from './Components/Test';
-import Home from './Components/Inicio/Home';
+import Home from './Components/Catalogo/Catalogo';
 import firebaseConfig from './firebase-config';
 import {FirebaseAppProvider} from 'reactfire';
-import Tarjeta from './Components/Tarjeta';
+import Tarjeta from './Components/Cards/Tarjeta';
 
 ReactDOM.render(
   

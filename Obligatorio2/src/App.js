@@ -3,12 +3,12 @@ import './App.css';
 import logo from './logo.svg';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { useFirebaseApp } from 'reactfire';
-import Login from './Components/Login';
+import Login from './Components/Login2';
 import Menu from './Components/Menu/Menu';
 import Contacto from './Components/Contacto/Contacto';
-import Portal from './Components/Portal';
-import Tarjeta from './Components/Tarjeta';
-import Home from './Components/Inicio/Home';
+import Portal from './Components/LoginRegistro/Portal';
+import Tarjeta from './Components/Cards/Tarjeta';
+import Home from './Components/Catalogo/Catalogo';
 
 function App(){
   const FireApp = useFirebaseApp();
