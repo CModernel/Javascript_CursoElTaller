@@ -1,64 +1,58 @@
-import React, { Component } from 'react';
-import { Button, Form } from 'react-bootstrap';
-import { useFirebaseApp, useUser } from 'reactfire';
+import React,{useState} from 'react';
 
-class Login2 extends Component {
+import  'firebase/auth';
+import {useFirebaseApp,useUser} from  'reactfire';
+
+
+export default  (props) => {
+
+    //Instanciar variable 
+    const [email , setEmail] = useState('');
+    const [contra , setPassword] = useState('');
+
+    //Iniciamos la app  
+    const firebase = useFirebaseApp();
+    const user = useUser();
     
 
-    constructor(props)
-    {
-        super(props);
-        this.state = {
-            nombreUser:'',
-            contraUser:''
-        }
+    //Este metodo es el que crea a el usuario 
+    const createUser = async ()=>{
 
-        this.handleNombre = this.handleNombre.bind(this);
-        this.handleContra = this.handleContra.bind(this);
+        await firebase.auth().createUserWithEmailAndPassword(email,contra);
+
+    }
+    //Este metodo es el que hace el login
+    const loginUser = async ()=>{
+        await firebase.auth().signInWithEmailAndPassword(email,contra);
     }
 
-    // Metodo para asignar lo que se ingresa dentro de el campo nombre
-    // a la variable state nombreUser
-    handleNombre(event){
-        this.setState({
-            nombreUser:event.target.value
-        });
+    //Este metodo destruye el login
+    const  closeSession =async()=>{
+        await firebase.auth().signOut();
     }
 
-    // Metodo para asignar lo que se ingresa dentro de el campo contraseña
-    // a la variable state contraUser
-    handleContra(event){
-        this.setState({
-            contraUser:event.target.value
-        });
-    }
+    return (<div>
+            { !user &&
+            <div> 
+             
+                    <input type="text" placeholder="Nombre" onChange={(ev)=>setEmail(ev.target.value)}/>
+                    <input type="text" placeholder="Contraseña" onChange={(ev)=>setPassword(ev.target.value)} />
+                    <button onClick={loginUser}>Iniciar session</button>
+                    <button onClick={createUser}>Crear usuario</button>
+              
+            </div>
+            }   
+            { user  && 
 
-    render(){
-        return(
-            <Form className="mt-4 mx-auto">
-                <Form.Group controlId="formBasicEmail">
-                    <Form.Label>Email address</Form.Label>
-                    <Form.Control type="email" placeholder="Enter email" />
-                    <Form.Text className="text-muted">
-                    We'll never share your email with anyone else.
-                    </Form.Text>
-                </Form.Group>
+                <div>
+                    <button onClick={closeSession}>Cerrar session</button>
+                </div>
 
-                <Form.Group controlId="formBasicPassword">
-                    <Form.Label>Password</Form.Label>
-                    <Form.Control type="password" placeholder="Password" />
-                </Form.Group>
-                <Form.Group controlId="formBasicCheckbox">
-                    <Form.Check type="checkbox" label="Check me out" />
-                </Form.Group>
-                <Button variant="primary" type="submit">
-                    Submit
-                </Button>
-            </Form>
-            );
-    }
 
-   
+            }    
+         
+
+    </div>)
+
+
 }
-
-export default Login2;
