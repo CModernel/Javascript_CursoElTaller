@@ -7,6 +7,35 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+.dfPadre{
+  display: flex; /* da libertad a los componentes internos*/
+  align-items: center; /* centr el contenido de todo los tags internos*/
+    
+  background-color:  #212529;
+}
+
+.dfLoren{
+  color: white;
+  margin-left: 50%;  
+  display: inline-block ;
+  border-left: 2px white solid;
+  padding: 1%;
+  text-align: center; 
+  margin: 5px; 
+}
+
+footer {
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+}
+
+.dfCopy{
+  text-align: center;
+  background-color: rgb(194, 190, 190);
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -84,9 +113,12 @@ h2{
   background-color:rgb(165, 20, 248);
 }
 
+
+
 @media (max-width: 850px) {
   section {
       flex-direction: column;
   }
 }
+
 

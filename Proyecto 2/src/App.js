@@ -9,6 +9,7 @@ import Contacto from './Components/Contacto/Contacto';
 import Portal from './Components/LoginRegistro/Portal';
 import Tarjeta from './Components/Cards/Tarjeta';
 import Home from './Components/Catalogo/Catalogo';
+import Footer from './Components/Footer/Footer';
 
 function App(){
   const FireApp = useFirebaseApp();
@@ -23,6 +24,7 @@ function App(){
             <Route path='/Contacto' exact ><Contacto /> </Route>
             <Route path="/"><Portal /></Route>
         </Switch>
+        <Footer></Footer>
       </div>
     </Router>
   );
