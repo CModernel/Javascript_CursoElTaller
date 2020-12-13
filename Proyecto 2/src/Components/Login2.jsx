@@ -12,7 +12,7 @@ export default  (props) => {
 
     //Iniciamos la app  
     const firebase = useFirebaseApp();
-    const user = useUser();
+    let user;// = useUser();
     
 
     //Este metodo es el que crea a el usuario 

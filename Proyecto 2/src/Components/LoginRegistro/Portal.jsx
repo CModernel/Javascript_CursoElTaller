@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Container } from 'react-bootstrap';
+import Login from './Login/Login';
 import Login2 from '../Login2';
 import Register from './Registro/Register';
 
@@ -15,7 +16,9 @@ class Portal extends Component {
                 Bienvenido
             </h1>
             <Container fluid="sm" className="d-sm-flex flex-sm-row flex-wrap justify-content-center">
-                <Login2 />
+                <Login />
+                <Register />
+                
             </Container>
         </div>
         );

@@ -17,15 +17,16 @@ export default(props) => {
     }
 
     const loginUser = async ()=>{
-        console.log(email);
+
         await firebase.auth().signInWithEmailAndPassword(email, contra);
     }
 
     const closeSession = async ()=>{
+        console.log("CloseSession");
         await firebase.auth().signOut();
     }
 
-    return(<div> { user &&
+    return(<div> { !user &&
             <Form className="login">
                 <h2>Ingrese al sistema</h2>
 
@@ -35,12 +36,12 @@ export default(props) => {
 
                 <div class="form-group">
                     <label for="exampleInputEmail1">Correo Electronico</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"  placeholder="ejemplo@dominio.com"></input>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"  placeholder="ejemplo@dominio.com" onChange={(ev)=>setEmail(ev.target.value)}></input>
                 </div>
                     
                 <div class="form-group">
                     <label for="exampleInputPassword1">Contraseña</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Ingrese contraseña"></input>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Ingrese contraseña" onChange={(ev)=>setPassword(ev.target.value)}></input>
                 </div>
                 <hr></hr>
 
