@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Button, Form, FormControl, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import Logout from '../LoginRegistro/Logout/Logout';
 
 class Menu extends Component {
     render(props){
@@ -19,6 +20,7 @@ class Menu extends Component {
                         <Nav.Link>
                         <Link to="/Contacto">Contacto</Link>
                         </Nav.Link>
+                        <Logout></Logout>
                     </Nav>
                 </Navbar.Collapse>
                 </Navbar>

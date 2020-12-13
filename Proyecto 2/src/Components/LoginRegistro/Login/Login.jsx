@@ -26,7 +26,7 @@ export default(props) => {
         await firebase.auth().signOut();
     }
 
-    return(<div> { !user &&
+    return(<div> {
             <Form className="login">
                 <h2>Ingrese al sistema</h2>
 
@@ -45,14 +45,6 @@ export default(props) => {
                     Iniciar Sesion
                 </Button>
             </Form>
-            }
-            {
-                user &&
-                <div>
-                    <Button variant="primary" onClick={closeSession}>
-                        Cerrar Session
-                    </Button>
-                </div>
             }
         </div>
         );
