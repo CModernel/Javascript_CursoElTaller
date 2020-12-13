@@ -30,10 +30,6 @@ export default(props) => {
             <Form className="login">
                 <h2>Ingrese al sistema</h2>
 
-                <div class="login-icon">
-                    <img src={srcImg}></img>
-                </div>
-
                 <div class="form-group">
                     <label for="exampleInputEmail1">Correo Electronico</label>
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"  placeholder="ejemplo@dominio.com" onChange={(ev)=>setEmail(ev.target.value)}></input>

@@ -7,6 +7,7 @@ class Contacto extends Component {
         const divStyle = {
             marginTop: '56px',
         };
+
     
         return(
             <div style={divStyle}>
@@ -14,21 +15,21 @@ class Contacto extends Component {
                     Contacto
                 </h1>
                 <p>Si desea contactarnos, por favor llene el formulario debajo:</p>
-                <Form>
+                <Form className="my-auto mx-auto">
 
                     <Form.Group as={Col}>
                         <Form.Label>Nombre</Form.Label>
-                        <Form.Control placeholder="John" />
+                        <Form.Control placeholder="Nombre" />
                     </Form.Group>
 
                     <Form.Group as={Col}>
                         <Form.Label>Apellido</Form.Label>
-                        <Form.Control placeholder="Doe" />
+                        <Form.Control placeholder="Apellido" />
                     </Form.Group>
 
                     <Form.Group as={Col} controlId="formGridEmail">
                         <Form.Label>Email</Form.Label>
-                        <Form.Control type="email" placeholder="Enter email" />
+                        <Form.Control type="email" placeholder="Ingrese Email" />
                     </Form.Group>
 
                     <Form.Group as={Col}>

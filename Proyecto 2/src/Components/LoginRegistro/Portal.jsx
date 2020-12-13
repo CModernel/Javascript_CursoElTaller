@@ -13,7 +13,7 @@ class Portal extends Component {
         return (
         <div style={divStyle}>
             <h1>
-                Bienvenido
+                Supermercado del Pueblo
             </h1>
             <Container fluid="sm" className="d-sm-flex flex-sm-row flex-wrap justify-content-center">
                 <Login />

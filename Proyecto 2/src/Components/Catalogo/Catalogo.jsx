@@ -25,15 +25,22 @@ class Home extends Component{
             marginTop: '56px',
         };
 
+        const items = this.state.listaTarjeta.map((item,keyV)=> {
+            return(
+                <div className="col-md-4">
+                    <div className="card rounded">
+                        <Tarjeta key={keyV} nombre={item.Nombre} TipoC={item.Tipo} URL={item.URL} descripcion={item.Descripcion} />
+                    </div>
+                </div>
+            )
+        })
         return (
             <div style={divStyle}>
-                {this.state.listaTarjeta.map((item,keyV)=> 
-                {
-                    return(
-                        <Tarjeta key={keyV} Titulo={item.nombre} TipoC={item.Tipo} URL={item.URL} />
-                        )
-                })}
-
+                <div className="container">
+                    <div className=" row mt-5">
+                        {items}
+                    </div>
+                </div>
             </div>
         );
     }

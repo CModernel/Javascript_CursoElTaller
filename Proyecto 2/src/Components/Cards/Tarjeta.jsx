@@ -10,11 +10,11 @@ class Tarjeta extends Component {
         return(
             <CardDeck>
                 <Card >
-                    <Card.Img variant="top" className="w-25 card-img-top" src={this.props.URL} />
+                    <Card.Img variant="top" className="w-10 card-img-top" src={this.props.URL} />
                     <Card.Body>
-                        <Card.Title>{this.props.Titulo}</Card.Title>
+                        <Card.Title>{this.props.nombre}</Card.Title>
                         <Card.Text>
-                            {this.props.TipoC}
+                            {this.props.descripcion}
                         </Card.Text>
                     </Card.Body>
                 </Card>
